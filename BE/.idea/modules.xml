@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BE.iml" filepath="$PROJECT_DIR$/BE.iml" />
+      <module fileurl="file://$PROJECT_DIR$/parsers/parsers.iml" filepath="$PROJECT_DIR$/parsers/parsers.iml" />
     </modules>
   </component>
 </project>
