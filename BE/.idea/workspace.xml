@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdb607a5-b0af-47f5-8ad5-8eeaadfe797d" name="Default" comment="Addition of Gradle wrapper">
+    <list default="true" id="bdb607a5-b0af-47f5-8ad5-8eeaadfe797d" name="Default" comment="Addition of Gradle wrapper&#10;">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradlew.bat" afterPath="$PROJECT_DIR$/gradlew.bat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -352,7 +352,11 @@
       <created>1415559096243</created>
       <updated>1415559096243</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Addition of Gradle wrapper&#10;">
+      <created>1415559141693</created>
+      <updated>1415559141693</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -404,7 +408,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Addition of Gradle wrapper" />
-    <option name="LAST_COMMIT_MESSAGE" value="Addition of Gradle wrapper" />
+    <MESSAGE value="Addition of Gradle wrapper&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Addition of Gradle wrapper&#10;" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
