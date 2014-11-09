@@ -1,7 +1,5 @@
+/BE/.idea/*
+/BE/.gradle/*
 /BE/build/*
-
-
-
-
-
-
+/BE/*.iml
+/BE/*.ipr
