@@ -1,6 +1,20 @@
-apply plugin: 'java'
-apply plugin: 'idea'
-apply plugin: 'war'
+allprojects {
+    apply plugin: 'java'
+    apply plugin: 'idea'
+    apply plugin: 'war'
+    apply from: "${rootProject.projectDir}/buildScripts/dependencies.gradle"
+    configurations.all {
+        resolutionStrategy {
+            //cacheChangingModulesFor 10, 'minutes'
+            cacheChangingModulesFor 0, 'seconds'
+            cacheDynamicVersionsFor 0, 'seconds'
+            // fail eagerly on version conflict (includes transitive dependencies)
+            // e.g. multiple different versions of the same dependency (group and name are equal)
+            failOnVersionConflict()
+            force libraries.springCore
+        }
+    }
+}
 
 repositories {
     mavenLocal()

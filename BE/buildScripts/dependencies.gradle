@@ -1,0 +1,5 @@
+project.ext.set("libraries", "")
+
+project.libraries = [
+	springCore: 'org.springframework:spring-core:3.2.2.RELEASE',
+]
