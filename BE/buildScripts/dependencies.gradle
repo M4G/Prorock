@@ -2,4 +2,6 @@ project.ext.set("libraries", "")
 
 project.libraries = [
 	springCore: 'org.springframework:spring-core:3.2.2.RELEASE',
+    flyway:     'org.flywaydb:flyway-gradle-plugin:3.0',
+    mysql:      'mysql:mysql-connector-java:5.1.34',
 ]

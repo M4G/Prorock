@@ -1,0 +1,24 @@
+apply plugin: 'flyway'
+
+buildscript {
+    apply from: "../buildScripts/dependencies.gradle"
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath libraries.mysql
+        classpath libraries.flyway
+    }
+}
+
+flyway {
+    url = 'jdbc:mysql://localhost:3306'
+    user = 'root'
+    password = 'malibu'
+    driver = 'com.mysql.jdbc.Driver'
+    schemas = ['test_schema']
+    locations = ["filesystem:${project.projectDir}/src/main/com/m4g/db/flyway"]
+}
