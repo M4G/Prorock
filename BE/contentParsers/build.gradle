@@ -1,0 +1,7 @@
+dependencies {
+    compile libraries.springCore
+}
+repositories {
+    mavenLocal()
+    mavenCentral()
+}

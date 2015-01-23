@@ -13,6 +13,7 @@ allprojects {
             failOnVersionConflict()
             force libraries.springCore
         }
+
     }
 }
 
