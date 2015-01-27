@@ -1,0 +1,9 @@
+dependencies {
+    compile libraries.crawler4j
+    compile libraries.slf4jApi
+    compile libraries.slf4jLog4j12
+}
+repositories {
+    mavenLocal()
+    mavenCentral()
+}
