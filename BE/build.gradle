@@ -2,7 +2,6 @@ allprojects {
     apply plugin: 'java'
     apply plugin: 'idea'
     apply plugin: 'war'
-    apply plugin: 'eclipse'
     apply from: "${rootProject.projectDir}/buildScripts/dependencies.gradle"
     configurations.all {
         resolutionStrategy {
@@ -12,9 +11,15 @@ allprojects {
             // fail eagerly on version conflict (includes transitive dependencies)
             // e.g. multiple different versions of the same dependency (group and name are equal)
             failOnVersionConflict()
-            force libraries.springCore
         }
 
+    }
+}
+
+subprojects {
+    repositories {
+        mavenLocal()
+        mavenCentral()
     }
 }
 

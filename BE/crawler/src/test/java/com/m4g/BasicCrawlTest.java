@@ -22,34 +22,37 @@ import edu.uci.ics.crawler4j.crawler.CrawlController;
 import edu.uci.ics.crawler4j.fetcher.PageFetcher;
 import edu.uci.ics.crawler4j.robotstxt.RobotstxtConfig;
 import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-/**
- * @author Yasser Ganjisaffar [lastname at gmail dot com]
- */
+@RunWith(MockitoJUnitRunner.class)
 public class BasicCrawlTest {
   private static Logger logger = LoggerFactory.getLogger(BasicCrawlTest.class);
 
-  public static void main(String[] args) throws Exception {
+/*  public static void main(String[] args) throws Exception {
     if (args.length != 2) {
       logger.info("Needed parameters: ");
       logger.info("\t rootFolder (it will contain intermediate crawl data)");
       logger.info("\t numberOfCralwers (number of concurrent threads)");
       return;
-    }
+    }*/
 
+    @Test
+    public void test() throws Exception {
     /*
      * crawlStorageFolder is a folder where intermediate crawl data is
      * stored.
      */
-    String crawlStorageFolder = args[0];
+    String crawlStorageFolder = "crawlTemp";
 
     /*
      * numberOfCrawlers shows the number of concurrent threads that should
      * be initiated for crawling.
      */
-    int numberOfCrawlers = Integer.parseInt(args[1]);
+    int numberOfCrawlers = Integer.parseInt("1");
 
     CrawlConfig config = new CrawlConfig();
 
