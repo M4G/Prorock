@@ -7,7 +7,6 @@ import com.m4g.job.adapters.*;
 import com.m4g.job.CriticalJob;
 import com.m4g.job.NoCuncurrentJob;
 import com.coral.project.facilities.utils.ClobUtils;
-import com.coral.utils.SF;
 import com.coral.utils.spring.PostInitializationListener;
 import com.m4g.task.*;
 import com.m4g.task.controllers.DurableTaskController;
@@ -489,7 +488,7 @@ public class QuartzSchedulerServiceImpl implements SchedulerService,
 
 		Runnable runnable = new SpringDelegator(getClassName(runnableClass.getName()));
 		TaskTypeEntity jobType = taskTypeDao.findByTaskExcClass(runnableClass.getName());
-		TaskKey taskKey = new TaskKey(SF.isEmpty(jobType)?getClassName(runnableClass.getName()+ "_" +new Date().getTime()):jobType.getName(),Scheduler.DEFAULT_GROUP);
+		TaskKey taskKey = new TaskKey(jobType == null ? getClassName(runnableClass.getName()+ "_" +new Date().getTime()):jobType.getName(),Scheduler.DEFAULT_GROUP);
 		
 		DurableJobAdapter jobAdapter;
 		if (runnable instanceof NoCuncurrentJob){
@@ -1396,7 +1395,7 @@ public class QuartzSchedulerServiceImpl implements SchedulerService,
 	public int getRetries(Integer taskInstanceId) {
 		TaskInstanceEntity instance = taskInstanceDao.find(taskInstanceId);
 		TaskTypeEntity type  = taskTypeDao.find(instance.getTaskId());
-		return SF.isEmpty(type.getRetries())?0:type.getRetries();
+		return type!= null && type.getRetries() !=null ?type.getRetries(): 0;
 	}
 
 

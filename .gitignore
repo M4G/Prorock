@@ -4,3 +4,5 @@
 /BE/build/*
 /BE/*.iml
 /BE/*.ipr
+/BE/*.iws
+/BE/*/*.iml
