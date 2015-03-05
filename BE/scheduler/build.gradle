@@ -1,0 +1,13 @@
+dependencies {
+    compile libraries.springCtx
+    compile libraries.springCore
+    compile libraries.springTx
+    compile libraries.quartz
+    compile libraries.quartzJobs
+    compile libraries.guava
+    compile libraries.slf4jApi
+    compile libraries.slf4jLog4j12
+
+    testCompile libraries.mockitoCore
+    testCompile libraries.junit
+}
