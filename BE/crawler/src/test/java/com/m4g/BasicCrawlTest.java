@@ -28,7 +28,7 @@ import org.mockito.runners.MockitoJUnitRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-@RunWith(MockitoJUnitRunner.class)
+//@RunWith(MockitoJUnitRunner.class)
 public class BasicCrawlTest {
   private static Logger logger = LoggerFactory.getLogger(BasicCrawlTest.class);
 
@@ -40,7 +40,7 @@ public class BasicCrawlTest {
       return;
     }*/
 
-    @Test
+
     public void test() throws Exception {
     /*
      * crawlStorageFolder is a folder where intermediate crawl data is
