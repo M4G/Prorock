@@ -4,6 +4,10 @@ def springVersion = '4.1.4.RELEASE'
 def hibernateVersion = '4.3.8'
 
 project.libraries = [
+    //Web
+    servletApi: "javax.servlet:javax.servlet-api:3.1.0",
+
+
     //Spring
 	springCore: "org.springframework:spring-core:$springVersion",
     springWeb: "org.springframework:spring-web:$springVersion",
@@ -11,6 +15,7 @@ project.libraries = [
     springOrm: "org.springframework:spring-orm:$springVersion",
     springTx: "org.springframework:spring-tx:$springVersion",
     springCtx: "org.springframework:spring-context:$springVersion",
+    springTest: "org.springframework:spring-test:$springVersion",
 
     //Tests
     junit: "junit:junit:4.10",
