@@ -1,6 +1,6 @@
 package com.m4g.controllers;
 
-import com.m4g.ApiTestContext;
+import com.m4g.config.WebAppContext;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -20,7 +20,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
  */
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = {ApiTestContext.class})
+@ContextConfiguration(classes = {WebAppContext.class})
 @WebAppConfiguration
 public class UserInfoControllerTest {
 

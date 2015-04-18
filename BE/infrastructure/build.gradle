@@ -1,14 +1,12 @@
 dependencies {
-    compile project(':infrastructure')
     compile libraries.servletApi
     compile libraries.springCtx
     compile libraries.springCore
     compile libraries.springWeb
     compile libraries.springMvc
-    compile libraries.guava
     compile libraries.slf4jApi
     compile libraries.slf4jLog4j12
-
+    compile libraries.jstl
     testCompile libraries.mockitoCore
     testCompile libraries.junit
     testCompile libraries.springTest
