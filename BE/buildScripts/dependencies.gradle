@@ -6,7 +6,7 @@ def hibernateVersion = '4.3.8'
 project.libraries = [
     //Web
     servletApi: "javax.servlet:javax.servlet-api:3.1.0",
-
+    jstl: 'javax.servlet:jstl:1.2',
 
     //Spring
 	springCore: "org.springframework:spring-core:$springVersion",
