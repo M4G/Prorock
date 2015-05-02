@@ -13,7 +13,7 @@
     </context-param>
     <context-param>
         <param-name>contextConfigLocation</param-name>
-        <param-value>com.m4g</param-value>
+        <param-value>com.m4g.config</param-value>
     </context-param>
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -32,13 +32,12 @@
         </init-param>
         <init-param>
             <param-name>contextConfigLocation</param-name>
-            <param-value>com.m4g</param-value>
+            <param-value>com.m4g.config</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
         <servlet-name>spring_dispatcher</servlet-name>
-        <url-pattern>/</url-pattern>
+        <url-pattern>/api/*</url-pattern>
     </servlet-mapping>
-
 </web-app>
