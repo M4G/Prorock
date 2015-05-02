@@ -17,6 +17,11 @@ project.libraries = [
     springCtx: "org.springframework:spring-context:$springVersion",
     springTest: "org.springframework:spring-test:$springVersion",
 
+    //json
+    jacksonCore: 'com.fasterxml.jackson.core:jackson-core:2.5.0',
+    jacksonAnnotation: 'com.fasterxml.jackson.core:jackson-annotations:2.5.0',
+    jacksonBind:'com.fasterxml.jackson.core:jackson-databind:2.5.0',
+
     //Tests
     junit: "junit:junit:4.10",
     mockitoCore: "org.mockito:mockito-core:1.9.5",

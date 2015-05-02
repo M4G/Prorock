@@ -17,7 +17,7 @@ buildscript {
 flyway {
     url = 'jdbc:mysql://localhost:3306'
     user = 'root'
-    password = 'malibu'
+    password = 'root'
     driver = 'com.mysql.jdbc.Driver'
     schemas = ['test_schema']
     locations = ["filesystem:${project.projectDir}/src/main/com/m4g/db/flyway"]

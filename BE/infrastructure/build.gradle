@@ -7,6 +7,9 @@ dependencies {
     compile libraries.slf4jApi
     compile libraries.slf4jLog4j12
     compile libraries.jstl
+    compile libraries.jacksonBind
+    compile libraries.jacksonAnnotation
+    compile libraries.jacksonCore
     testCompile libraries.mockitoCore
     testCompile libraries.junit
     testCompile libraries.springTest

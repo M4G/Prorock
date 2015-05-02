@@ -21,8 +21,8 @@ public class WebAppContext extends WebMvcConfigurerAdapter {
 
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setViewClass(JstlView.class);
-        viewResolver.setPrefix("/WEB-INF");
-        viewResolver.setSuffix(".jsp");
+        //viewResolver.setPrefix("/WEB-INF");
+        //viewResolver.setSuffix(".jsp");
         return viewResolver;
     }
 }
